@@ -4,17 +4,17 @@
   tasks: 
     - name: create ansible nodes on aws
       ec2:
-        region: "{{myawsregion}}"
-        key_name: "{{myinstancekey}}"
-        instance_type: "{{myinstancetype}}"
-        image: "{{myec2AMIID}}"
+        region: eu-west-2
+        key_name: mytestkey123
+        instance_type: t2.micro
+        image: ami-0dd85557c12ac3e97
         wait: yes
         group: default
         count: 2
-        vpc_subnet_id: "{{mysubnetID}}"
+        vpc_subnet_id: subnet-a06beaec
         assign_public_ip: yes
         instance_tags:
-          Name: "{{mynodestag}}"
+          Name: ec2-nodes
 
 
 
