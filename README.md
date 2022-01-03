@@ -16,6 +16,10 @@ Follow these steps:
     aws_access_key_id=XXXXX
     aws_secret_access_key=XXXX
 
+    click Esc, 
+    type :wq!, 
+    enter
+
 5. Create an ec2 AMI 
 
 6. Change to ansible user
