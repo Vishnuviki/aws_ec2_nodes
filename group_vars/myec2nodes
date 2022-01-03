@@ -1,0 +1,7 @@
+---
+myawsregion: eu-west-2
+mynodeskey: mytestkey123
+mynodestype: t2.micro
+myAMIID: ami-0dd85557c12ac3e97
+mysubnetID: subnet-a06beaec
+mynodestag: ec2-nodes
