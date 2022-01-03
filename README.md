@@ -1,4 +1,4 @@
-# aws_ec2_nodes
+Follow these steps:
 
 1. Install python-pip on ansible master as a root user
     # sudo apt-get update
