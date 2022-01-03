@@ -1,5 +1,5 @@
 --- 
-- hosts: myansiblenodes 
+- hosts: localhost 
   become: yes
   tasks: 
     - name: create ansible nodes on aws
