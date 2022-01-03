@@ -1,5 +1,5 @@
 --- 
-- hosts: localhost 
+- hosts: myec2nodes
   become: yes
   tasks: 
     - name: create ansible nodes on aws
