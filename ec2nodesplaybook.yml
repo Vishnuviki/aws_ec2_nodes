@@ -1,4 +1,21 @@
 --- 
-- hosts: localhost 
+- hosts: myansiblenodes 
   become: yes
-  
+  tasks: 
+    - name: create ansible nodes on aws
+      ec2:
+        region: "{{myawsregion}}"
+        key_name: "{{myinstancekey}}"
+        instance_type: "{{myinstancetype}}"
+        image: "{{myec2AMIID}}"
+        wait: yes
+        group: default
+        count: 2
+        vpc_subnet_id: "{{mysubnetID}}"
+        assign_public_ip: yes
+        instance_tags:
+          Name: "{{mynodestag}}"
+
+
+
+
